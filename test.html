@@ -1,0 +1,79 @@
+{
+data.map((d, index) => (
+<g>
+    {/*/!*ours_hefei 左上角*!/*/}
+    {/*<rect width={wx} height={wy * d[8]} stroke={wrong} fill={wrong} x={index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={0}/>*/}
+    {/*<rect width={wx} height={wy * d[7]} stroke={bright} fill={bright} x={index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={wy * d[8]}/>*/}
+    {/*<rect width={wx} height={wy * d[6]} stroke={right} fill={right} x={index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={wy * (d[8] + d[7])}/>*/}
+    {/*/!*ours_zhengzhou 右上角*!/*/}
+    {/*<rect width={wx} height={wy * d[2]} stroke={wrong} fill={wrong}*/}
+             {/*      x={b_in + wx + index * (2 * wx + b_in +b_out)} y={0}/>*/}
+    {/*<rect width={wx} height={wy * d[1]} stroke={bright} fill={bright}*/}
+             {/*      x={b_in + wx + index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={wy * d[2]}/>*/}
+    {/*<rect width={wx} height={wy * d[0]} stroke={right} fill={right}*/}
+             {/*      x={b_in + wx + index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={wy * (d[1] + d[2])}/>*/}
+    {/*/!*candidate_hefei 左下角*!/*/}
+    {/*<rect width={wx} height={wy * d[11]} stroke={wrong} fill={wrong} x={index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={10 * wy}/>*/}
+    {/*<rect width={wx} height={wy * d[10]} stroke={bright} fill={bright} x={index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={10 * wy + wy * d[11]}/>*/}
+    {/*<rect width={wx} height={wy * d[9]} stroke={right} fill={right} x={index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={10 * wy + wy * (d[11] + d[10])}/>*/}
+    {/*/!*candidate_zhengzhou 右下角*!/*/}
+    {/*<rect width={wx} height={wy * d[5]} stroke={wrong} fill={wrong}*/}
+             {/*      x={b_in + wx + index * (2 * wx + b_in +b_out)} y={10 * wy}/>*/}
+    {/*<rect width={wx} height={wy * d[4]} stroke={bright} fill={bright}*/}
+             {/*      x={b_in + wx + index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={10 * wy + wy * d[5]}/>*/}
+    {/*<rect width={wx} height={wy * d[3]} stroke={right} fill={right}*/}
+             {/*      x={b_in + wx + index * (2 * wx + b_in +b_out)}*/}
+    {/*      y={10 * wy + wy * (d[5] + d[4])}/>*/}
+
+    {/*ours_hefei 左上角*/}
+    <rect width={wx} height={wy * d[8]} stroke={wrong} fill={wrong}
+          x={index * (2 * wx + b_in + b_out)}
+          y={0}/>
+        <rect width={wx} height={wy * d[7]} stroke={bright} fill={bright}
+              x={index * (2 * wx + b_in + b_out)}
+              y={wy * d[8]}/>
+        <rect width={wx} height={wy * d[6]} stroke={right} fill={right}
+              x={index * (2 * wx + b_in + b_out)}
+              y={wy * (d[8] + d[7])}/>
+        {/*candidate_hefei 右上角*/}
+        <rect width={wx} height={wy * d[11]} stroke={wrong} fill={wrong}
+              x={b_in + wx + index * (2 * wx + b_in + b_out)} y={0}/>
+            <rect width={wx} height={wy * d[10]} stroke={bright} fill={bright}
+                  x={b_in + wx + index * (2 * wx + b_in + b_out)}
+                  y={wy * d[11]}/>
+            <rect width={wx} height={wy * d[9]} stroke={right} fill={right}
+                  x={b_in + wx + index * (2 * wx + b_in + b_out)}
+                  y={wy * (d[10] + d[11])}/>
+            {/*ours_zhengzhou 左下角*/}
+            <rect width={wx} height={wy * d[2]} stroke={wrong} fill={wrong}
+                  x={index * (2 * wx + b_in + b_out)}
+                  y={10 * wy}/>
+            <rect width={wx} height={wy * d[1]} stroke={bright} fill={bright}
+                  x={index * (2 * wx + b_in + b_out)}
+                  y={10 * wy + wy * d[2]}/>
+            <rect width={wx} height={wy * d[0]} stroke={right} fill={right}
+                  x={index * (2 * wx + b_in + b_out)}
+                  y={10 * wy + wy * (d[2] + d[1])}/>
+            {/*candidate_zhengzhou 右下角*/}
+            <rect width={wx} height={wy * d[5]} stroke={wrong} fill={wrong}
+                  x={b_in + wx + index * (2 * wx + b_in + b_out)} y={10 * wy}/>
+            <rect width={wx} height={wy * d[4]} stroke={bright} fill={bright}
+                  x={b_in + wx + index * (2 * wx + b_in + b_out)}
+                  y={10 * wy + wy * d[5]}/>
+            <rect width={wx} height={wy * d[3]} stroke={right} fill={right}
+                  x={b_in + wx + index * (2 * wx + b_in + b_out)}
+                  y={10 * wy + wy * (d[5] + d[4])}/>
+</g>
+)
+)
+
+}

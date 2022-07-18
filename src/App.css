@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+main {
+    display: flex;
+    position: fixed;
+}
+
+.header {
+    background: #666666;
+    display: flex;
+    top: 0;
+    height: 50px;
+    width: 100vw;
+}
+
+.tag-text {
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+}
+
+.indicator {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}

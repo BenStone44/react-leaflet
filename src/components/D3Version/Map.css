@@ -1,0 +1,92 @@
+.background {
+    /*background: bisque;*/
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 200px;
+    left: 30px;
+}
+
+.exg {
+    width: 50vw;
+    height: 90vh;
+    background: aqua;
+    display: inline-block;
+}
+
+.sub {
+    background: burlywood;
+    width: 50vw;
+    height: 90vh;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+
+.exg_above {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.exg_map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.sub1 {
+    height: 48vh;
+    width: 25vw;
+    position: relative;
+    display: inline-block;
+    border-bottom: 0.5vh solid white;
+    border-top: 0.5vh solid white;
+    border-left: 0.25vw solid white;
+    border-right: 0.25vw solid white;
+}
+
+.sub_above {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.sub_map {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+
+.pagination_down {
+    height: 4vh;
+    width: 50vw;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.arrow_svg {
+    transform: translate3d(0, 0, 0) !important;
+}
+
+
+path.sub_ploy.leaflet-interactive {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+path.sub_circle.leaflet-interactive {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+path.polygon.leaflet-interactive {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
